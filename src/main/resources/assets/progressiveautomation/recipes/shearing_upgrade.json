@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sls",
+    "wcw",
+    "sls"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:shears"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "stone"
+    },
+    "w": {
+      "item": "minecraft:wool",
+      "data": 32767
+    },
+    "l": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:shearing_upgrade",
+    "count": 1,
+    "data": 0
+  }
+}

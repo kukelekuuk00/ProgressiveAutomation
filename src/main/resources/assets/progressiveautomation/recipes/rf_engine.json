@@ -1,0 +1,27 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sss",
+    "gcg",
+    "sss"
+  ],
+  "key": {
+    "c": {
+      "type": "forge:ore_dict",
+      "ore": "blockRedstone"
+    },
+    "g": {
+      "type": "forge:ore_dict",
+      "ore": "ingotGold"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:rf_engine",
+    "count": 1,
+    "data": 0
+  }
+}

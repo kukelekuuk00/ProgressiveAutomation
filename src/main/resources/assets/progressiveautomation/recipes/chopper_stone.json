@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sss",
+    "scs",
+    "sps"
+  ],
+  "key": {
+    "c": {
+      "item": "progressiveautomation:chopper"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "stone"
+    },
+    "p": {
+      "item": "minecraft:stone_axe"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:chopper_stone",
+    "count": 1,
+    "data": 0
+  }
+}

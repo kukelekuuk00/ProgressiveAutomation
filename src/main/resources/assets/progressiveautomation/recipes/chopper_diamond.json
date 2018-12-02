@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sbs",
+    "scs",
+    "sps"
+  ],
+  "key": {
+    "c": {
+      "item": "progressiveautomation:chopper_iron"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    "p": {
+      "item": "minecraft:iron_axe"
+    },
+    "b": {
+      "type": "forge:ore_dict",
+      "ore": "blockDiamond"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:chopper_diamond",
+    "count": 1,
+    "data": 0
+  }
+}

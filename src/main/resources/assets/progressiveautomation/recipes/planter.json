@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sss",
+    "scs",
+    "sps"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:furnace"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "logWood"
+    },
+    "p": {
+      "item": "minecraft:wooden_hoe"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:planter",
+    "count": 1,
+    "data": 0
+  }
+}

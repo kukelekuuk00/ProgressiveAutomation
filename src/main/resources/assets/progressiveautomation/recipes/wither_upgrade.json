@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "bsb",
+    "sws",
+    "bsb"
+  ],
+  "key": {
+    "b": {
+      "item": "progressiveautomation:diamond_upgrade"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "ingotGold"
+    },
+    "w": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:wither_upgrade",
+    "count": 1,
+    "data": 0
+  }
+}

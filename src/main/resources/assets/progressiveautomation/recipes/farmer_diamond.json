@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sbs",
+    "scs",
+    "sps"
+  ],
+  "key": {
+    "c": {
+      "item": "progressiveautomation:farmer_iron"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    "p": {
+      "item": "minecraft:shears"
+    },
+    "b": {
+      "type": "forge:ore_dict",
+      "ore": "blockDiamond"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:farmer_diamond",
+    "count": 1,
+    "data": 0
+  }
+}

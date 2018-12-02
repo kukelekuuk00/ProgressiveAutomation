@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sss",
+    "scs",
+    "sps"
+  ],
+  "key": {
+    "c": {
+      "item": "progressiveautomation:farmer"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "stone"
+    },
+    "p": {
+      "item": "minecraft:shears"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:farmer_stone",
+    "count": 1,
+    "data": 0
+  }
+}

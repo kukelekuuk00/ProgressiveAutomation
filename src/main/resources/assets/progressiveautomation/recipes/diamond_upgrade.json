@@ -1,0 +1,21 @@
+{
+  "type": "forge:ore_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
+    },
+    {
+      "item": "progressiveautomation:iron_upgrade"
+    }
+  ],
+  "result": {
+    "item": "progressiveautomation:diamond_upgrade",
+    "count": 1,
+    "data": 0
+  }
+}

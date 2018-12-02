@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sss",
+    "scs",
+    "sps"
+  ],
+  "key": {
+    "c": {
+      "item": "progressiveautomation:crafter"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "stone"
+    },
+    "p": {
+      "item": "minecraft:crafting_table"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:crafter_stone",
+    "count": 1,
+    "data": 0
+  }
+}

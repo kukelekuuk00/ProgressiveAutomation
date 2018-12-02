@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sbs",
+    "scs",
+    "sps"
+  ],
+  "key": {
+    "c": {
+      "item": "progressiveautomation:chopper_stone"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "p": {
+      "item": "minecraft:iron_axe"
+    },
+    "b": {
+      "type": "forge:ore_dict",
+      "ore": "blockIron"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:chopper_iron",
+    "count": 1,
+    "data": 0
+  }
+}

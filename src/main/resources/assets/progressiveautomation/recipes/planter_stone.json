@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sss",
+    "scs",
+    "sps"
+  ],
+  "key": {
+    "c": {
+      "item": "progressiveautomation:planter"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "stone"
+    },
+    "p": {
+      "item": "minecraft:stone_hoe"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:planter_stone",
+    "count": 1,
+    "data": 0
+  }
+}

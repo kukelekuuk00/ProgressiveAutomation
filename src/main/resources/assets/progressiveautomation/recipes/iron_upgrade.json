@@ -1,0 +1,22 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "s s",
+    "scs",
+    "s s"
+  ],
+  "key": {
+    "c": {
+      "item": "progressiveautomation:stone_upgrade"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:iron_upgrade",
+    "count": 1,
+    "data": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "sss",
+    "mcm",
+    "sss"
+  ],
+  "key": {
+    "c": {
+      "type": "forge:ore_dict",
+      "ore": "blockRedstone"
+    },
+    "s": {
+      "type": "forge:ore_dict",
+      "ore": "stone"
+    },
+    "m": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "progressiveautomation:milker_upgrade",
+    "count": 1,
+    "data": 0
+  }
+}
