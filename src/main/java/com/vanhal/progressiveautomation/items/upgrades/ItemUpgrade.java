@@ -17,11 +17,6 @@ public abstract class ItemUpgrade extends BaseItem {
 	}
 
 	public int allowedAmount() { return 1; }
-	
-	@Override
-	protected void addUpgradeRecipe() {
-		this.addNormalRecipe();
-	}
 
 	@Override
 	public void preInit() {

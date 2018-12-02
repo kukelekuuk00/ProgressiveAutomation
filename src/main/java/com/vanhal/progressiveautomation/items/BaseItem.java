@@ -35,8 +35,7 @@ public class BaseItem extends Item {
 	}
 	
 	public void preInit() {
-		GameRegistry.register(this);
-		addUpgradeRecipe();
+		GameRegistry.findRegistry(Item.class).register(this);
 	}
 	
 	public void init() {
@@ -44,11 +43,4 @@ public class BaseItem extends Item {
 			.register(this, 0, new ModelResourceLocation(Ref.MODID + ":" + itemName, "inventory"));
 	}
 
-	protected void addUpgradeRecipe() {
-		
-	}
-
-	protected void addNormalRecipe() {
-		
-	}
 }

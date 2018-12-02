@@ -34,58 +34,36 @@ import com.vanhal.progressiveautomation.entities.planter.TilePlanterDiamond;
 import com.vanhal.progressiveautomation.entities.planter.TilePlanterIron;
 import com.vanhal.progressiveautomation.entities.planter.TilePlanterStone;
 
+import com.vanhal.progressiveautomation.ref.Ref;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Proxy {
 
 	public void registerEntities() {
-		//miner
-		GameRegistry.registerTileEntity(TileMiner.class, "TileMiner");
-		GameRegistry.registerTileEntity(TileMinerStone.class, "TileMinerStone");
-		GameRegistry.registerTileEntity(TileMinerIron.class, "TileMinerIron");
-		GameRegistry.registerTileEntity(TileMinerDiamond.class, "TileMinerDiamond");
-		
 		//chopper
-		GameRegistry.registerTileEntity(TileChopper.class, "TileChopper");
-		GameRegistry.registerTileEntity(TileChopperStone.class, "TileChopperStone");
-		GameRegistry.registerTileEntity(TileChopperIron.class, "TileChopperIron");
-		GameRegistry.registerTileEntity(TileChopperDiamond.class, "TileChopperDiamond");
+		GameRegistry.registerTileEntity(TileChopper.class, new ResourceLocation(Ref.MODID,"TileChopper"));
+		GameRegistry.registerTileEntity(TileChopperStone.class, new ResourceLocation(Ref.MODID,"TileChopperStone"));
+		GameRegistry.registerTileEntity(TileChopperIron.class, new ResourceLocation(Ref.MODID,"TileChopperIron"));
+		GameRegistry.registerTileEntity(TileChopperDiamond.class, new ResourceLocation(Ref.MODID,"TileChopperDiamond"));
 		
 		//planter
-		GameRegistry.registerTileEntity(TilePlanter.class, "TilePlanter");
-		GameRegistry.registerTileEntity(TilePlanterStone.class, "TilePlanterStone");
-		GameRegistry.registerTileEntity(TilePlanterIron.class, "TilePlanterIron");
-		GameRegistry.registerTileEntity(TilePlanterDiamond.class, "TilePlanterDiamond");
-		
-		//generator
-		GameRegistry.registerTileEntity(TileGenerator.class, "TileGenerator");
-		GameRegistry.registerTileEntity(TileGeneratorStone.class, "TileGeneratorStone");
-		GameRegistry.registerTileEntity(TileGeneratorIron.class, "TileGeneratorIron");
-		GameRegistry.registerTileEntity(TileGeneratorDiamond.class, "TileGeneratorDiamond");
-		
-		//generator
-		GameRegistry.registerTileEntity(TileCrafter.class, "TileCrafter");
-		GameRegistry.registerTileEntity(TileCrafterStone.class, "TileCrafterStone");
-		GameRegistry.registerTileEntity(TileCrafterIron.class, "TileCrafterIron");
-		GameRegistry.registerTileEntity(TileCrafterDiamond.class, "TileCrafterDiamond");
-		
-		//killer
-		GameRegistry.registerTileEntity(TileKiller.class, "TileKiller");
-		GameRegistry.registerTileEntity(TileKillerStone.class, "TileKillerStone");
-		GameRegistry.registerTileEntity(TileKillerIron.class, "TileKillerIron");
-		GameRegistry.registerTileEntity(TileKillerDiamond.class, "TileKillerDiamond");
-		
+		GameRegistry.registerTileEntity(TilePlanter.class, new ResourceLocation(Ref.MODID,"TilePlanter"));
+		GameRegistry.registerTileEntity(TilePlanterStone.class, new ResourceLocation(Ref.MODID,"TilePlanterStone"));
+		GameRegistry.registerTileEntity(TilePlanterIron.class, new ResourceLocation(Ref.MODID,"TilePlanterIron"));
+		GameRegistry.registerTileEntity(TilePlanterDiamond.class, new ResourceLocation(Ref.MODID,"TilePlanterDiamond"));
+
+		//crafter
+		GameRegistry.registerTileEntity(TileCrafter.class, new ResourceLocation(Ref.MODID,"TileCrafter"));
+		GameRegistry.registerTileEntity(TileCrafterStone.class, new ResourceLocation(Ref.MODID,"TileCrafterStone"));
+		GameRegistry.registerTileEntity(TileCrafterIron.class, new ResourceLocation(Ref.MODID,"TileCrafterIron"));
+		GameRegistry.registerTileEntity(TileCrafterDiamond.class, new ResourceLocation(Ref.MODID,"TileCrafterDiamond"));
+
 		//farmer
-		GameRegistry.registerTileEntity(TileFarmer.class, "TileFarmer");
-		GameRegistry.registerTileEntity(TileFarmerStone.class, "TileFarmerStone");
-		GameRegistry.registerTileEntity(TileFarmerIron.class, "TileFarmerIron");
-		GameRegistry.registerTileEntity(TileFarmerDiamond.class, "TileFarmerDiamond");
-		
-		//capacitor
-		GameRegistry.registerTileEntity(TileCapacitor.class, "TileCapacitor");
-		GameRegistry.registerTileEntity(TileCapacitorStone.class, "TileCapacitorStone");
-		GameRegistry.registerTileEntity(TileCapacitorIron.class, "TileCapacitorIron");
-		GameRegistry.registerTileEntity(TileCapacitorDiamond.class, "TileCapacitorDiamond");
+		GameRegistry.registerTileEntity(TileFarmer.class, new ResourceLocation(Ref.MODID,"TileFarmer"));
+		GameRegistry.registerTileEntity(TileFarmerStone.class, new ResourceLocation(Ref.MODID,"TileFarmerStone"));
+		GameRegistry.registerTileEntity(TileFarmerIron.class, new ResourceLocation(Ref.MODID,"TileFarmerIron"));
+		GameRegistry.registerTileEntity(TileFarmerDiamond.class, new ResourceLocation(Ref.MODID,"TileFarmerDiamond"));
 	}
 	
 	public int registerGui(String guiName) {

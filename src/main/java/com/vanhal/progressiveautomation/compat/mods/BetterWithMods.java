@@ -58,7 +58,7 @@ public class BetterWithMods extends Vanilla {
 	protected IBlockState getPlantBlock(World worldObj, ItemStack itemStack, Point3I point) {
 		if ( (!itemStack.isEmpty()) && (itemStack.getItem()!=null) ) {
 			if (itemStack.getItem() instanceof ItemBlock) {
-				return ((ItemBlock)itemStack.getItem()).block.getDefaultState();
+				return ((ItemBlock)itemStack.getItem()).getBlock().getDefaultState();
 			}
 		}
 		return null;

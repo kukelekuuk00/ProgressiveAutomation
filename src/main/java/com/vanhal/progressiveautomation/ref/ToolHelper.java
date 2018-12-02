@@ -37,14 +37,14 @@ public class ToolHelper {
 	public static final int LEVEL_GOLD = 0;
 	public static final int LEVEL_DIAMOND =3;
 	public static final int LEVEL_MAX = 100;
-	
+
 	//speeds for levels
 	public static int SPEED_WOOD = 2;
 	public static int SPEED_STONE = 4;
 	public static int SPEED_IRON = 6;
 	public static int SPEED_DIAMOND = 8;
 	public static int SPEED_GOLD = 12;
-	
+
 	//random
 	protected static Random RND = new Random();
 
@@ -77,7 +77,7 @@ public class ToolHelper {
 	public static int getLevel(ItemStack itemStack) {
 		//Vanilla Tools
 		if (itemStack.getItem() instanceof ItemTool) {
-			return ((ItemTool)itemStack.getItem()).getToolMaterial().getHarvestLevel();
+			return Item.ToolMaterial.valueOf(((ItemTool)itemStack.getItem()).getToolMaterialName()).getHarvestLevel();
 		} else if ((itemStack.getItem() instanceof ItemSword) ||
 			(itemStack.getItem() instanceof ItemHoe)) {
 			String material = "";
@@ -103,13 +103,13 @@ public class ToolHelper {
 	public static int tinkersLevel(ItemStack item) {
 		if (item.getTagCompound().hasKey("Stats")) {
 			NBTTagCompound tags = item.getTagCompound().getCompoundTag("Stats");
-			
+
 			int toolLevel = tags.getInteger("HarvestLevel");
 			return toolLevel;
 		}
 		return -1;
 	}
-	
+
 	//Get the type of tinker tool
 	public static int tinkersType(Item item) {
 		String name = item.getUnlocalizedName();
@@ -133,7 +133,7 @@ public class ToolHelper {
 		}
 		return -1;
 	}
-	
+
 	public static boolean isBroken(ItemStack item) {
 		if (item.isEmpty()) return false;
 		boolean broken = tinkersIsBroken(item);
@@ -144,7 +144,7 @@ public class ToolHelper {
 		}
 		return broken;
 	}
-	
+
 	public static boolean tinkersIsBroken(ItemStack item) {
 		if (item.isEmpty()) return false;
 		if ( (item.hasTagCompound()) && (item.getTagCompound().hasKey("Stats")) ) {
@@ -170,7 +170,7 @@ public class ToolHelper {
 		int value = getLevel(item);
 		return value;
 	}
-	
+
 	public static int getSpeed(int level) {
 		if (level == LEVEL_GOLD) {
 			return SPEED_GOLD;
@@ -186,25 +186,25 @@ public class ToolHelper {
 			return 1;
 		}
 	}
-	
+
 	public static float getDigSpeed(ItemStack itemStack, IBlockState state) {
 		if ((!itemStack.isEmpty())) {
 			return itemStack.getStrVsBlock(state);
 		}
 		return 1.0f;
 	}
-	
+
 	public static boolean damageTool(ItemStack tool, World world, int x, int y, int z) {
-		if ( (tool.getItem() instanceof ItemShears) || (tool.getItem() instanceof ItemTool) || 
+		if ( (tool.getItem() instanceof ItemShears) || (tool.getItem() instanceof ItemTool) ||
 				(tool.getItem() instanceof ItemHoe) || (tool.getItem() instanceof ItemSword) ) {
-			if (tool.attemptDamageItem(1, RND)) {
+			if (tool.attemptDamageItem(1, RND, null)) {
 				return true;
 			}
 		} else {
 			Block mineBlock = world.getBlockState(new BlockPos(x, y, z)).getBlock();
 			PlayerFake fakePlayer = new PlayerFake((WorldServer)world);
 			if (tinkersType(tool.getItem())==TYPE_HOE) {
-				tool.attemptDamageItem(1, RND);
+				tool.attemptDamageItem(1, RND, null);
 			} else {
 				tool.getItem().onBlockDestroyed(tool, world, mineBlock.getDefaultState(), new BlockPos(x, y, z), fakePlayer);
 			}

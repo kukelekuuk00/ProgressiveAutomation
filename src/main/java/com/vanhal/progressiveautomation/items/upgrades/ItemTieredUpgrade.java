@@ -17,13 +17,10 @@ public abstract class ItemTieredUpgrade extends ItemUpgrade {
 	}
 	
 	public void preInit(Item previousTier) {
-		GameRegistry.register(this);
+		GameRegistry.findRegistry(Item.class).register(this);
 		UpgradeRegistry.registerUpgradeItem(this.getType(), this);
-		addTieredRecipe(previousTier);
 	}
-	
-	protected abstract void addTieredRecipe(Item previousTier);
-	
+
 	public int getLevel() {
 		return level;
 	}

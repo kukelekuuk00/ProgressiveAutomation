@@ -21,27 +21,7 @@ public class ItemWitherUpgrade extends ItemUpgrade {
 	public ItemWitherUpgrade() {
 		super("WitherUpgrade", UpgradeType.WITHER);
 	}
-	
-	protected void addNormalRecipe() {
-		if (PAConfig.allowDiamondLevel) {
-			ShapedOreRecipe recipe = new ShapedOreRecipe(new ItemStack(this), new Object[]{
-				"dgd", "gng", "dgd", 'd', PAItems.diamondUpgrade, 'g', Items.GOLD_INGOT, 'n', Items.NETHER_STAR});
-			GameRegistry.addRecipe(recipe);
-		} else {
-			ShapedOreRecipe recipe = new ShapedOreRecipe(new ItemStack(this), new Object[]{
-				"dgd", "gng", "dgd", 'd', Blocks.DIAMOND_BLOCK, 'g', Items.GOLD_INGOT, 'n', Items.NETHER_STAR});
-			GameRegistry.addRecipe(recipe);
-		}
-	}
-	
-	protected void addUpgradeRecipe() {
-		this.addNormalRecipe();
-	}
-	
-	protected void addTieredRecipe(Item previousTier) {
-		this.addNormalRecipe();
-	}
-	
+
 	@SideOnly(Side.CLIENT)
     public void addInformation(ItemStack itemStack, EntityPlayer player, List<String> list, boolean par) {
 		list.add(TextFormatting.GRAY + "Multiplies the range of a machine by "+PAConfig.witherMultiplier);

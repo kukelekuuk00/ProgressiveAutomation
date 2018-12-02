@@ -45,7 +45,6 @@ public class ItemWrench extends BaseItem {
 		return WrenchModes.Mode.Rotate;
 	}
 	
-	@Override
 	public void addInformation(ItemStack itemStack, EntityPlayer player, List<String> list, boolean bool) {
 		list.add(TextFormatting.GRAY + "Current Mode: "+TextFormatting.WHITE+getMode(itemStack));
 	}
@@ -112,19 +111,7 @@ public class ItemWrench extends BaseItem {
 		
 		world.spawnEntity(entItem);
 	}
-	
-	@Override
-	protected void addNormalRecipe() {
-		ShapedOreRecipe recipe = new ShapedOreRecipe(new ItemStack(this), new Object[]{
-			"s s", " i ", " s ", 'i', Items.IRON_INGOT, 's', Items.STICK});
-		GameRegistry.addRecipe(recipe);
-	}
-	
-	@Override
-	protected void addUpgradeRecipe() {
-		addNormalRecipe();
-	}
-	
+
 	@Override
 	public void init() {
 		//1.11 ResourceLocation changed! This should fix it ~~Psycho Ray

@@ -22,12 +22,6 @@ public class PAGuiFactory implements IModGuiFactory {
 	public GuiScreen createConfigGui(GuiScreen parentScreen) {
 		return new PAGuiConfig(parentScreen);
 	}
-	
-	@Override
-	public Class<? extends GuiScreen> mainConfigGuiClass() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public Set<RuntimeOptionCategoryElement> runtimeGuiCategories() {
@@ -35,11 +29,5 @@ public class PAGuiFactory implements IModGuiFactory {
 		return null;
 	}
 
-	@Override
-	public RuntimeOptionGuiHandler getHandlerFor(
-			RuntimeOptionCategoryElement element) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

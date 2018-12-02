@@ -13,15 +13,11 @@ public class PAConfig {
 	public static int fuelCost;
 	
 	//blocks
-	public static boolean minerEnabled;
 	public static boolean chopperEnabled;
 	public static boolean planterEnabled;
-	public static boolean generatorEnabled;
 	public static boolean crafterEnabled;
 	public static boolean farmerEnabled;
-	public static boolean killerEnabled;
-	public static boolean capacitorEnabled;
-	
+
 	//allow levels
 	public static boolean allowWoodenLevel;
 	public static boolean allowStoneLevel;
@@ -29,10 +25,8 @@ public class PAConfig {
 	public static boolean allowDiamondLevel;
 	
 	//special upgrades
-	public static boolean allowCobbleUpgrade;
 	public static boolean allowShearingUpgrade;
 	public static boolean allowMilkerUpgrade;
-	public static boolean allowFillerUpgrade;
 	public static boolean allowWitherUpgrade;
 	public static int witherMultiplier;
 	
@@ -47,8 +41,6 @@ public class PAConfig {
 	public static int rfStorageFactor;
 	
 	//misc options
-	public static boolean allowCoalPellets;
-	public static boolean enableWitherTools;
 	public static boolean allowPotatos;
 	public static boolean allowWrench;
 	public static boolean destroyTools;
@@ -110,40 +102,32 @@ public class PAConfig {
 		if (rfStorageFactor<=0) rfStorageFactor = 1;
 		
 		//misc options 
-		allowCoalPellets = config.getBoolean("coalPellets", "general", true, "Allow coal pellets (requires restart)");
 		allowPotatos = config.getBoolean("allowPotatos", "general", true, "Allow Potatos to be used as a fuel source in PA machines");
-		enableWitherTools = config.getBoolean("witherTools", "general", true, "Allow Wither tools and resources to create them");
 		allowWrench = config.getBoolean("allowWrench", "general", true, "Allows the wrench, you've got to be seriously evil to not allow this!");
-		destroyTools = config.getBoolean("destroyTools", "general", true, "Changing to false will make the machines spit a fully broken vanilla tool into it's inventory");
+		destroyTools = config.getBoolean("destroyTools", "general", false, "Changing to false will make the machines spit a fully broken vanilla tool into it's inventory");
 		shearTrees = config.getBoolean("shearTrees", "general", true, "Allow the chopper to take a shearing upgrade in order to have a sheer to shear leaves");
 		allowInventoryOverflow = config.getBoolean("allowInventoryOverflow", "general", true, "Drop items on the ground if machine's inventory is full, setting this to false will destroy overflow items.");
 		pauseOnFullInventory = config.getBoolean("pauseOnFullInventory",  "general",  false, "Pause machines when the are no open slots in their inventory.");
 
 		
 		//enable blocks		
-		minerEnabled = config.getBoolean("miner", "blocks", true, "Miner Block is enabled (requires restart)");
 		chopperEnabled = config.getBoolean("chopper", "blocks", true, "Tree Chopper Block is enabled (requires restart)");
 		planterEnabled = config.getBoolean("planter", "blocks", true, "Planter/Harvester Block is enabled (requires restart)");
-		generatorEnabled = config.getBoolean("generator", "blocks", true, "Generator Block is enabled (requires restart)");
 		crafterEnabled = config.getBoolean("crafter", "blocks", true, "Crafter Block is enabled (requires restart)");
 		farmerEnabled = config.getBoolean("farmer", "blocks", true, "Killer Block is enabled (requires restart)");
-		killerEnabled = config.getBoolean("killer", "blocks", true, "Animal Farmer Block is enabled (requires restart)");
-		capacitorEnabled = config.getBoolean("capacitor", "blocks", true, "Capacitor Block is enabled (requires restart)");
 
 		allowWoodenLevel = config.getBoolean("wooden", "upgrades", true, "Allow wooden level blocks (requires restart)");
 		allowStoneLevel = config.getBoolean("stone", "upgrades", true, "Allow stone level blocks (requires restart)");
 		allowIronLevel = config.getBoolean("iron", "upgrades", true, "Allow iron level blocks (requires restart)");
 		allowDiamondLevel = config.getBoolean("diamond", "upgrades", true, "Allow diamond level blocks (requires restart)");
 		
-		allowCobbleUpgrade = config.getBoolean("cobblegen", "upgrades", true, "Allow cobble gen upgrade for the miner (requires restart)");
-		allowFillerUpgrade = config.getBoolean("filler", "upgrades", true, "Allow filler upgrade for the miner (requires restart)");
 		allowWitherUpgrade = config.getBoolean("wither", "upgrades", true, "Allow the wither upgrade (requires restart)");
 		allowShearingUpgrade = config.getBoolean("shearing", "upgrades", true, "Allow the shearing upgrade (requires restart)");
 		allowMilkerUpgrade = config.getBoolean("milker", "upgrades", true, "Allow the milker upgrade (requires restart)");
 		witherMultiplier = config.getInt("witherMultiplier", "upgrades", 4, 2, 10, "How much the wither upgrade extends the machines. (How much multiplies the upgrades by)");
-		
+
 		allowKillPlayer = config.getBoolean("killPlayer", "upgrades", true, "Allow the Killer to kill players");
-		
+
 		maxRangeUpgrades = config.getInt("maxRangeUpgrades", "upgrades", Integer.MAX_VALUE, 0, Integer.MAX_VALUE, "Max amount of range upgrades that can be put into a machine");
 		
 		//toolLevels

@@ -84,7 +84,7 @@ public class ProgressiveAutomation {
 		ModHelper.init();
 		
 		NetworkRegistry.INSTANCE.registerGuiHandler(instance, guiHandler);
-		FMLCommonHandler.instance().bus().register(instance);
+		MinecraftForge.EVENT_BUS.register(instance);
 		proxy.init();
 	}
 	

@@ -32,8 +32,11 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.util.Constants;
 import net.minecraftforge.common.util.FakePlayer;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.internal.FMLNetworkHandler;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -148,16 +151,15 @@ public class BaseBlock extends BlockContainer implements IDismantleable {
 		
 		world.spawnEntity(entItem);
 	}
-	
-	public void addRecipe(Block previousTier) {
-		
-	}
-	
-	public void preInit(Block previousTier) {
+
+
+	public void preInit() {
 		final ItemBlock itemBlock = new ItemBlock(this);
-		GameRegistry.register(this);
-		GameRegistry.register(itemBlock, this.getRegistryName());
-		addRecipe(previousTier);
+		GameRegistry.findRegistry(Block.class).register(this);
+//		GameRegistry.register(itemBlock, this.getRegistryName());
+		ProgressiveAutomation.logger.error("REGISTRYNAME for " +this.getClass().toString()+": " + this.getRegistryName());
+		itemBlock.setRegistryName(this.getRegistryName());
+		GameRegistry.findRegistry(Item.class).register(itemBlock);
 	}
 	
 	public void init() {
