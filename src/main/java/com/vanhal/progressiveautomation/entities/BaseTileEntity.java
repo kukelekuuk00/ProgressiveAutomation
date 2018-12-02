@@ -4,6 +4,8 @@ import java.util.Random;
 
 import javax.annotation.Nonnull;
 
+import cofh.redstoneflux.api.IEnergyProvider;
+import cofh.redstoneflux.api.IEnergyReceiver;
 import com.vanhal.progressiveautomation.PAConfig;
 import com.vanhal.progressiveautomation.blocks.network.PartialTileNBTUpdateMessage;
 import com.vanhal.progressiveautomation.items.ItemRFEngine;
@@ -12,8 +14,6 @@ import com.vanhal.progressiveautomation.ref.WrenchModes;
 import com.vanhal.progressiveautomation.util.BlockHelper;
 import com.vanhal.progressiveautomation.util.Point2I;
 
-import cofh.api.energy.IEnergyProvider;
-import cofh.api.energy.IEnergyReceiver;
 import net.minecraft.block.Block;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;

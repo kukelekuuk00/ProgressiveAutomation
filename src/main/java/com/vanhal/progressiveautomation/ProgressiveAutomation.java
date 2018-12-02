@@ -31,7 +31,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
-@Mod(modid = Ref.MODID, name = Ref.MODNAME, version = Ref.Version, guiFactory = "com.vanhal.progressiveautomation.gui.PAGuiFactory", dependencies = "after:CoFHAPI|energy;after:CoFHCore;")
+@Mod(modid = Ref.MODID, name = Ref.MODNAME, version = Ref.Version, guiFactory = "com.vanhal.progressiveautomation.gui.PAGuiFactory", dependencies = "after:cofhapi|energy;after:cofhcore;")
 public class ProgressiveAutomation {
 	@Instance(Ref.MODID)
 	public static ProgressiveAutomation instance;

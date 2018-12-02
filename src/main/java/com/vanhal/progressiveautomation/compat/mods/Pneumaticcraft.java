@@ -95,7 +95,7 @@ public class Pneumaticcraft extends BaseMod {
 				entItem.hoverStart = 0.0f;
 				entItem.yOffset = 0.0f;
 				if (items.hasTagCompound()) {
-					entItem.getEntityItem().setTagCompound((NBTTagCompound)items.getTagCompound().copy());
+					entItem.getItem().setTagCompound((NBTTagCompound)items.getTagCompound().copy());
 		        }
 				
 				

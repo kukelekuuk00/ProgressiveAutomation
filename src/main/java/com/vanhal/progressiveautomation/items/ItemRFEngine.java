@@ -3,9 +3,9 @@ package com.vanhal.progressiveautomation.items;
 import java.text.DecimalFormat;
 import java.util.List;
 
+import cofh.redstoneflux.api.IEnergyContainerItem;
 import com.vanhal.progressiveautomation.PAConfig;
 
-import cofh.api.energy.IEnergyContainerItem;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;

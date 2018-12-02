@@ -189,7 +189,7 @@ public class ToolHelper {
 
 	public static float getDigSpeed(ItemStack itemStack, IBlockState state) {
 		if ((!itemStack.isEmpty())) {
-			return itemStack.getStrVsBlock(state);
+			return itemStack.getDestroySpeed(state);
 		}
 		return 1.0f;
 	}

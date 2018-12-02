@@ -156,8 +156,6 @@ public class BaseBlock extends BlockContainer implements IDismantleable {
 	public void preInit() {
 		final ItemBlock itemBlock = new ItemBlock(this);
 		GameRegistry.findRegistry(Block.class).register(this);
-//		GameRegistry.register(itemBlock, this.getRegistryName());
-		ProgressiveAutomation.logger.error("REGISTRYNAME for " +this.getClass().toString()+": " + this.getRegistryName());
 		itemBlock.setRegistryName(this.getRegistryName());
 		GameRegistry.findRegistry(Item.class).register(itemBlock);
 	}

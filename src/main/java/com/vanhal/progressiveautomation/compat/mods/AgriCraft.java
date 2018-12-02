@@ -119,7 +119,7 @@ public class AgriCraft extends Vanilla {
 		}
 		List<ItemStack> items = new ArrayList<ItemStack>();
 		for (EntityItem item: entities) {
-			items.add(item.getEntityItem());
+			items.add(item.getItem());
 			worldObj.removeEntity(item);
 		}
 		

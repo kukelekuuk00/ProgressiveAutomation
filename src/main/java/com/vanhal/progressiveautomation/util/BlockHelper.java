@@ -385,10 +385,10 @@ public final class BlockHelper {
 		List<EntityItem> result = worldObj.getEntitiesWithinAABB(EntityItem.class, AxisAlignedBB.getBoundingBox(x - 2, y - 2, z - 2, x + 3, y + 3, z + 3));
 		for (int i = 0; i < result.size(); i++) {
 			EntityItem entity = result.get(i);
-			if (entity.isDead || entity.getEntityItem().stackSize <= 0) {
+			if (entity.isDead || entity.getItem().stackSize <= 0) {
 				continue;
 			}
-			stacks.add(entity.getEntityItem());
+			stacks.add(entity.getItem());
 			entity.worldObj.removeEntity(entity);
 		}
 		return stacks;

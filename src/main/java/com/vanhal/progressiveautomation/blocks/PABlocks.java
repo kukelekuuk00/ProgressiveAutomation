@@ -5,9 +5,6 @@ import java.util.List;
 
 import com.vanhal.progressiveautomation.PAConfig;
 
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
-
 public class PABlocks {
 
 	public static void preInit() {

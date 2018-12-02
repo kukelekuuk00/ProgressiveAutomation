@@ -1,10 +1,6 @@
 package com.vanhal.progressiveautomation.core;
 
 import com.vanhal.progressiveautomation.ProgressiveAutomation;
-import com.vanhal.progressiveautomation.entities.capacitor.TileCapacitor;
-import com.vanhal.progressiveautomation.entities.capacitor.TileCapacitorDiamond;
-import com.vanhal.progressiveautomation.entities.capacitor.TileCapacitorIron;
-import com.vanhal.progressiveautomation.entities.capacitor.TileCapacitorStone;
 import com.vanhal.progressiveautomation.entities.chopper.TileChopper;
 import com.vanhal.progressiveautomation.entities.chopper.TileChopperDiamond;
 import com.vanhal.progressiveautomation.entities.chopper.TileChopperIron;
@@ -17,23 +13,10 @@ import com.vanhal.progressiveautomation.entities.farmer.TileFarmer;
 import com.vanhal.progressiveautomation.entities.farmer.TileFarmerDiamond;
 import com.vanhal.progressiveautomation.entities.farmer.TileFarmerIron;
 import com.vanhal.progressiveautomation.entities.farmer.TileFarmerStone;
-import com.vanhal.progressiveautomation.entities.generator.TileGenerator;
-import com.vanhal.progressiveautomation.entities.generator.TileGeneratorDiamond;
-import com.vanhal.progressiveautomation.entities.generator.TileGeneratorIron;
-import com.vanhal.progressiveautomation.entities.generator.TileGeneratorStone;
-import com.vanhal.progressiveautomation.entities.killer.TileKiller;
-import com.vanhal.progressiveautomation.entities.killer.TileKillerDiamond;
-import com.vanhal.progressiveautomation.entities.killer.TileKillerIron;
-import com.vanhal.progressiveautomation.entities.killer.TileKillerStone;
-import com.vanhal.progressiveautomation.entities.miner.TileMiner;
-import com.vanhal.progressiveautomation.entities.miner.TileMinerDiamond;
-import com.vanhal.progressiveautomation.entities.miner.TileMinerIron;
-import com.vanhal.progressiveautomation.entities.miner.TileMinerStone;
 import com.vanhal.progressiveautomation.entities.planter.TilePlanter;
 import com.vanhal.progressiveautomation.entities.planter.TilePlanterDiamond;
 import com.vanhal.progressiveautomation.entities.planter.TilePlanterIron;
 import com.vanhal.progressiveautomation.entities.planter.TilePlanterStone;
-
 import com.vanhal.progressiveautomation.ref.Ref;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
